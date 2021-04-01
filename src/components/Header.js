@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Searchbar from "./Searchbar";
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import { render } from "react-dom";
 import API from "../utils/API";
 import Employeecontainer from "./Employeecontainer";
 
@@ -14,8 +13,6 @@ state = {
     ascendingSort: false
 };   
     
-    // TODO: set initial state to be results from query 
-    // TODO: make the search update the state in real time
     constructor(props) {
         super(props);
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -30,7 +27,6 @@ state = {
         console.log(this.state.results)
     }
 
-// TODO: write handleInputChange function for when user seraches
 handleInputChange(event) {
    const value = event.target.value;
    this.setState({

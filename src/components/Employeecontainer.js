@@ -8,7 +8,6 @@ function Employeecontainer(props) {
     
     return (
         <div>
-            <span>Placeholder for Employee Container</span>
             <Employeelist 
             results={props.results} 
             filteredResults={props.filteredResults}

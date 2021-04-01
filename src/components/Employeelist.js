@@ -1,7 +1,6 @@
 import React from "react";
 
 function Employeelist(props) {
-    // TODO: match the results to the JSON from the API
     return (
         <table className="table">
             <thead>
